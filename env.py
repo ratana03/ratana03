@@ -28,7 +28,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set your OpenAI API key from environment variable
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Set your Telegram bot token and chat ID
 telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
