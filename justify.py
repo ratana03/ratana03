@@ -22,8 +22,9 @@ from docx2pdf import convert
 from io import BytesIO  
 
 # Set your OpenAI API key
-openai.api_key = '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'
 
+# Set your OpenAI API key from environment variable
+openai.api_key = os.getenv('OPENAI_API_KEY')
 # Set your Telegram bot token and chat ID
 telegram_bot_token = '7350243325:AAHZfDsZILAkAHSImd2ja0BwoYVt_VjkMxE'
 telegram_chat_id = '-1002164741954'
